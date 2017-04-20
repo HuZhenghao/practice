@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lena.css">
+	<title>数字图像处理</title>
+</head>
+<body>
+	<canvas id="canvas" width="256" height="256"></canvas>
+	<img id="img" src="lena.bmp" style="display:none;">
+	<div class="button-contianer">
+		<input id="tongji" type="button" value="图像数据统计" />
+		<input id="duibi" type="button" value="对比度增强" />
+		<input id="pinghua" type="button" value="图像平滑" />
+		<input id="ruihua" type="button" value="图像锐化" />
+		<input type="button" value="图像旋转,拖动下方滑块" />
+		<input id="xuanzhuan" type="range" min="0" max="360" value="0" />
+		<input id="bianhuan" type="button" value="图像变换">
+	</div>
+	<div id="display-text">
+	</div>
+	<div id="display-img">
+	</div>
+	<script type="text/javascript" src="lena.js"></script>
+</body>
+</html>
