@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+	<title></title>
+</head>
+<body>
+	<div id="slider" class="slider">
+		<div class="slider-head">
+			<img src="img/sliderLogo.png">
+			<span class="slider-name">新手铲屎官是我</span>
+			<span class="slider-level">LV.2</span>
+			<span class="slider-coin">喵星币：<span id="sliderCoin"></span>枚</span>
+			<span class="slider-intimate">亲密度：<span id="sliderIntimate"></span>点</span>
+		</div>
+		<div class="slider-main">
+			<ul>
+				<a href="#"><li><img src="img/slider1.png">猫言</li></a>
+				<a href="#"><li><img src="img/slider2.png">笔记</li></a>
+				<a href="#"><li><img src="img/slider3.png">每日猫</li></a>
+			</ul>
+			<ul class="slider-bottom">
+				<a href="#"><li><img src="img/slider4.png">清除缓存</li></a>
+				<li><img src="img/slider5.png">打开消息提醒<div id="sliderButton" class="slider-button"><div id="sliderButtonCircle" class="slider-button-circle"></div></div></li>
+			</ul>
+		</div>
+	</div>
+	<header id="header" class="header">
+		<img id="page" class="page" src="img/page.png">
+		<img class="logo" src="img/logo.png">
+	</header>
+	<footer id="footer" class="operation">
+		<ul class="clearfix">
+			<li><img id="op1" src="img/op1.png"></li>
+			<li><img id="op2" src="img/op2.png"></li>
+			<li><img id="op3" src="img/op3.png"></li>
+			<li><img id="op4" src="img/op4.png"></li>
+		</ul>
+	</footer>
+	<div id="shadowBox" class="shadow-box"></div>
+	<div id="body">
+		<nav>
+			<ul class="cat">
+				<li><img src="img/cat1.jpeg"></li>
+				<li><img src="img/cat2.jpeg"></li>
+				<li class="onselect"><img src="img/cat3.jpg"><span class="cat-text">主子</span></li>
+				<li><img src="img/cat4.jpeg"></li>
+				<li><img src="img/cat5.png"></li>
+			</ul>
+		</nav>
+		<div class="main-container">
+			<ul id="d1Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">喵喵喵，这个新家可真大啊，虽然你这个陌生人抱了本大人一路，还给本大人梳毛，但是我还是想先一个人呆会～</span></li>
+				<li class="clearfix"><span class="dialog-cat">诶？两足兽你别过来！再靠近我抓你啦讲真的！</span></li>
+				<li class="clearfix"><span id="d1Choice1" class="choice1">别害怕宝贝我只想抱抱你</span><span id="d1Choice2" class="choice2">嘿你这个家伙别躲啊，怎么，抱都不行吗？！</span></li>
+				<li id="d1Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">实际上，我们猫猫到新环境感到害怕都是正常的，这时候应该耐心给我们一些时间，而不是追逐着吓我呢</span></li>
+				<li class="clearfix"><span id="d1Choice3" class="choice1">嗯那好吧，慢慢来～</span><span id="d1Choice4" class="choice2">才不管 现在就要抱！</span></li>
+				<li id="d1Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">你为什么一直盯着我的眼睛？是想跟我打架吗？</span></li>
+				<li class="clearfix"><span id="d1Choice5" class="choice1">是啊是啊，出来抓我啊</span><span id="d1Choice6" class="choice2">啊呦，你不喜欢的话那我就不看你啦</span></li>
+				<li id="d1Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">还有啊，这位朋友，请说出你的故事</span></li>
+				<li class="clearfix"><span class="dialog-cat">为什么你总是说话那么大声呢？本王很不爽啊</span></li>
+				<li class="clearfix"><span id="d1Choice7" class="choice1">哈哈哈哈我偏不，我就要大喊大叫，你能怎样？</span><span id="d1Choice8" class="choice2">好~马上改~主子说的对！</span></li>
+				<li id="d1Result78" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">我要休息了，两脚兽你跪安吧。</span></li>
+				<li class="clearfix"><span class="dialog-cat">喵喵喵~好饿啊</span></li>
+				<li class="clearfix"><span id="d1Choice9" class="choice1">喂干猫粮</span><span id="d1Choice10" class="choice2">喂专用幼猫粮+妙鲜包</span></li>
+				<li id="d1Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">喂两脚兽，猫砂盆里有礼物</span></li>
+				<li class="clearfix"><span id="d1Choice11" class="choice1">好哒主子，我马上去铲屎</span><span id="d1Choice12" class="choice2">怎么又去拉？真是烦死人</span></li>
+				<li id="d1Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li id="d1next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d2Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">嘿铲屎官快起床！新的一天开始啦！</span></li>
+				<li class="clearfix"><span id="d2Choice1" class="choice1">别打扰我！烦！</span><span id="d2Choice2" class="choice2">早啊，主子~睡得怎么样？</span></li>
+				<li id="d2Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">我昨天巡视下来，发现家里有很多安全问题啊</span></li>
+				<li class="clearfix"><span class="dialog-cat">明天你就上班去了，朕心不安呀</span></li>
+				<li class="clearfix"><span id="d2Choice3" class="choice1">啊？！！有什么问题，马上就改！</span><span id="d2Choice4" class="choice2">怎么要求这么多啊？不就是只猫吗</span></li>
+				<li id="d2Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">朕发现你家的窗子没有窗纱啊，这样下次朕顺着窗台巡视的时候，万一一个不小心…</span></li>
+				<li class="clearfix"><span id="d2Choice5" class="choice1">天啦噜，之前的窗纱坏掉一直忘记修，您等等，我马上就联系物业师傅来！</span><span id="d2Choice6" class="choice2">好懒，不想装，应该不会发生什么事儿吧</span></li>
+				<li id="d2Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">还有，你昨晚用洗衣粉洗过衣服对不对</span></li>
+				<li class="clearfix"><span id="d2Choice7" class="choice1">是的呀</span><span id="d2Choice8" class="choice2">忘记了…….</span></li>
+				<li class="clearfix"><span class="dialog-cat">但是洗衣液溅到地上你也忘记擦了…万一半夜我渴了去舔，可就中毒了呀</span></li>
+				<li class="clearfix"><span id="d2Choice9" class="choice1">Omg，是我疏漏了，以后一定注意</span><span id="d2Choice10" class="choice2">你是猫啊！嗅觉那么灵敏自己小心点不行吗</span></li>
+				<li id="d2Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">还有啊</span></li>
+				<li class="clearfix"><span class="dialog-cat">你家养了很多花这我不反对，可是把百合、铃兰这种有毒的植物放在我能够到的地方…是要谋害朕么？！！</span></li>
+				<li class="clearfix"><span id="d2Choice11" class="choice1">这…我不知道他有毒</span><span id="d2Choice12" class="choice2">天啦噜，我还是赶快处理掉他们吧，看来以后买花要先查查资料了</span></li>
+				<li id="d2Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">嗯还有…昨晚你的玻璃杯放在床头柜上，我不小心扫到地上碎了，跟你说一声啊</span>
+				</li>
+				<li class="clearfix"><span id="d2Choice13" class="choice1">什么？居然把杯子摔了！看来不打一顿张长记性不行了！</span><span id="d2Choice14" class="choice2">啊是我粗心了，完全忘记猫猫爱爬上爬下了，没关系，以后我把玻璃制品都收好，不过你没受伤吧？</span></li>
+				<li id="d2Result1314" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">今天的工作交代完啦！快去落实！不要打扰本大王发呆！</span>
+				</li>
+				<li id="d2next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d3Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">喂，铲屎官，你家来的亲戚要谋害朕！他在给我喂毒药！</span></li>
+				<li class="clearfix"><span id="d3Choice1" class="choice1">什么？你该不会有被害妄想症吧！</span><span id="d3Choice2" class="choice2">发生了什么？你没事吧！</span></li>
+				<li id="d3Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">刚刚你们吃下午茶的时候，那个新来的两足兽喂了一块巧克力给我</span></li>
+				<li class="clearfix"><span id="d3Choice3" class="choice1">哎这熊孩子我一会就去教训他</span><span id="d3Choice4" class="choice2">一点点没事吧，别那么娇气</span></li>
+				<li id="d3Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">哼还有呢，上次你爷爷吃饭还硬给我塞了一块洋葱！还好本王逃掉了</span></li>
+				<li class="clearfix"><span id="d3Choice5" class="choice1">这是长辈啊我又不好说什么</span><span id="d3Choice6" class="choice2">以后我一定跟家里来的亲戚先说好，千万别喂食，以前是我疏忽了</span></li>
+				<li id="d3Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">其实猫猫的世界里有很多毒物呢，咖啡因、可可、巧克力不说，还有葡萄葡萄干、牛油果、生蛋白、洋葱、辛香料等等都是致命的存在啊！</span></li>
+				<li class="clearfix"><span class="dialog-cat">哎 想想就心累。退下吧，让朕冷静会儿</span></li>
+				<li id="d3next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d4Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">嘿~铲屎的起来该工作啦(ー`´ー)</span></li>
+				<li class="clearfix"><span id="d4Choice1" class="choice1">哇~有一个可爱的猫闹钟真幸福</span><span id="d4Choice2" class="choice2">为什么别人家的猫那么温顺可爱，我可能养了只假猫</span></li>
+				<li id="d4Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">我刚刚去巡视了一下厨房，把酱油瓶赐死了。你去处理一下</span></li>
+				<li class="clearfix"><span id="d4Choice3" class="choice1">卧槽……你破坏力也太强了，总这么调皮我就把你扔了！</span><span id="d4Choice4" class="choice2">被偏爱的都有持无恐，只要主子开心就好</span></li>
+				<li id="d4Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">话说本王最近老觉得身上痒痒的</span></li>
+				<li class="clearfix"><span id="d4Choice5" class="choice1">主子你要洗澡了</span><span id="d4Choice6" class="choice2">洗澡太麻烦了，要不你忍忍？</span></li>
+				<li id="d4Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">洗澡这件事以后再议，我要午睡了~</span></li>
+				<li class="clearfix"><span class="dialog-cat">铲屎的，醒醒！我怎么感觉我臭臭的</span></li>
+				<li class="clearfix"><span id="d4Choice7" class="choice1">没办法了，我只好强制你洗澡了</span><span id="d4Choice8" class="choice2">乖乖洗澡就有妙鲜包吃哦~</span></li>
+				<li id="d4Result78" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">身上被你弄的全是水，好难受啊！</span></li>
+				<li class="clearfix"><span id="d4Choice9" class="choice1">我马上给你吹干~一会儿就舒服了</span><span id="d4Choice10" class="choice2">主子，我觉得自然风干对毛发比较好诶~</span></li>
+				<li id="d4Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">两脚兽，下次你再逼我洗澡本王就要挠你了，我们猫一个月只用洗一次澡好吗？ </span></li>
+				<li class="clearfix"><span class="dialog-cat">不过为啥洗完澡脖子还是痒痒的？挠脖子停不下来</span></li>
+				<li class="clearfix"><span id="d4Choice11" class="choice1">那再洗一边遍？</span><span id="d4Choice12" class="choice2">我检查一下是不是有虫</span></li>
+				<li id="d4Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">感觉身上有小虫子爬来爬去，好难受，肯定长虫子了</span></li>
+				<li class="clearfix"><span id="d4Choice13" class="choice1">去楼下宠物店买个驱虫项圈给你戴吧</span><span id="d4Choice14" class="choice2">给你备好了滴液，在脖子后面滴一滴就好啦~</span></li>
+				<li id="d4Result1314" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">两脚兽，你有准备化毛膏或者猫草给我吗？</span></li>
+				<li class="clearfix"><span id="d4Choice15" class="choice1">那是什么东西？</span><span id="d4Choice16" class="choice2">准备了~主子我现在就喂给你吃</span></li>
+				<li id="d4Result1516" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">以后一个月喂我两次化毛膏，记住了吗？</span></li>
+				<li class="clearfix"><span id="d4Choice17" class="choice1">大概能记住吧……</span><span id="d4Choice18" class="choice2">记住了，拿出小本本记下来</span></li>
+				<li id="d4Result1718" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">本王练功去了，别来烦我~</span></li>
+				<li id="d4next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d5Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">铲屎的你还记得今天是什么日子吗？</span></li>
+				<li class="clearfix"><span id="d5Choice1" class="choice1">我记得，你四个月的生日~</span><span id="d5Choice2" class="choice2">我太忙了不记得了</span></li>
+				<li id="d5Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">今天我生日，你总要表示表示吧~</span></li>
+				<li class="clearfix"><span id="d5Choice3" class="choice1">我早就准备了一个巧克力蛋糕给你，惊不惊喜？</span><span id="d5Choice4" class="choice2">我准备了一盆猫薄荷，欢迎主子来吸呦～～</span></li>
+				<li id="d5Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">不过除了我的生日，你还记得别的吗？</span></li>
+				<li class="clearfix"><span id="d5Choice5" class="choice1">还有什么？</span><span id="d5Choice6" class="choice2">当然记得，马上带你去医院例行检查还有打疫苗～</span></li>
+				<li id="d5Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">虽然本王很讨厌医院，但是不打疫苗朕很可能会得病死掉，还是保命要紧。</span></li>
+				<li class="clearfix"><span class="dialog-cat">铲屎的还不快备好朕的座驾</span></li>
+				<li class="clearfix"><span class="dialog-cat">两脚兽你刚刚认真听医生的医嘱了吗？</span></li>
+				<li class="clearfix"><span id="d5Choice7" class="choice1">听了听了，拿小本本记下来了</span><span id="d5Choice8" class="choice2">我刚刚光顾着玩手机了</span></li>
+				<li id="d5Result78" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">必答题！不许逃！</span></li>
+				<li class="clearfix"><span class="dialog-cat">我现在能洗澡吗？</span></li>
+				<li class="clearfix"><span id="d5Choice9" class="choice1">不能</span><span id="d5Choice10" class="choice2">能洗吧…..注意不着凉就好</span></li>
+				<li id="d5Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">我想出去玩吗？可以吗喵=￣ω￣=？</span></li>
+				<li class="clearfix"><span id="d5Choice11" class="choice1">虽然你卖萌但是你不能出去</span><span id="d5Choice12" class="choice2">不能出去没有自由太可怜了，放你出去玩一会儿吧</span></li>
+				<li id="d5Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">如果我发烧呕吐怎么办？</span></li>
+				<li class="clearfix"><span id="d5Choice13" class="choice1">马上送医院</span><span id="d5Choice14" class="choice2">先观察一下，喂点我的药</span></li>
+				<li id="d5Result1314" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">最后哦，医生叮嘱我让我这几天多休息，少运动，所以你懂的吧</span></li>
+				<li class="clearfix"><span id="d5Choice15" class="choice1">懂懂懂</span><span id="d5Choice16" class="choice2">我大概懂……吧</span></li>
+				<li id="d5Result1516" class="clearfix"><span class="dialog-cat"></span></li>
+				<li id="d5next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d6Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">铲屎的从床上滚下来，整张床都是朕的</span></li>
+				<li class="clearfix"><span id="d6Choice1" class="choice1">凭什么？臭猫我一脚把你踢下床~</span><span id="d6Choice2" class="choice2">我都是你的，更别说这张床了</span></li>
+				<li id="d6Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">朕要去沙发上休息一会儿，不要打扰我~</span></li>
+				<li class="clearfix"><span id="d6Choice3" class="choice1">嘿嘿嘿，趁你睡着了，我正好抱着撸撸毛~</span><span id="d6Choice4" class="choice2">主子安静下来太可爱了！！！赶快拍照</span></li>
+				<li id="d6Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">铲屎的，我好无聊，快陪我玩耍~</span></li>
+				<li class="clearfix"><span id="d6Choice5" class="choice1">我也好忙，给你买了自动玩具自己去玩吧~</span><span id="d6Choice6" class="choice2">哈哈哈哈哈哈哈，我准备了好久的激光笔终于派上用场了</span></li>
+				<li id="d6Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">朕玩够了，地毯上的毛朕赏赐给你的~</span></li>
+				<li class="clearfix"><span id="d6Choice7" class="choice1">啊啊啊啊啊死猫，地毯这么贵，我要打你</span><span id="d6Choice8" class="choice2">自己养的主子哭着也要照顾好</span></li>
+				<li id="d6Result78" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">本王有一件事不知当讲不当讲~</span></li>
+				<li class="clearfix"><span id="d6Choice9" class="choice1">不不不，我还是不听了</span><span id="d6Choice10" class="choice2">你说吧，我承受得住</span></li>
+				<li id="d6Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">铲屎的你的工作来了，快去打扫一下，好臭~</span></li>
+				<li class="clearfix"><span id="d6Choice11" class="choice1">心累，自己弄的自己打扫，我不管了</span><span id="d6Choice12" class="choice2">虽然嘴上不愿意但还是心甘情愿的去铲屎了，我怎么贱兮兮的~</span></li>
+				<li id="d6Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">铲屎的，想吃零食~</span></li>
+				<li class="clearfix"><span id="d6Choice13" class="choice1">不能吃零食，你怎么这么馋</span><span id="d6Choice14" class="choice2">只能吃一点点哦~~</span></li>
+				<li id="d6Result1314" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">好了，本王今儿累了，不要打扰我睡觉，你跪安吧~</span></li>
+				<li class="clearfix"><span id="d6Choice15" class="choice1">哈哈哈哈我就不让你睡，跟我再玩一会儿</span><span id="d6Choice16" class="choice2">主子好好休息~爱你</span></li>
+				<li id="d6Result1516" class="clearfix"><span class="dialog-cat"></span></li>
+				<li id="d6next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d7Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">午夜</span></li>
+				<li class="clearfix"><span class="dialog-cat">喵～喵～喵喵～～～喵～喵～喵～</span></li>
+				<li class="clearfix"><span id="d7Choice1" class="choice1">天啦 主子大人我今天忙了一天，为！什！么！夜晚都没得休息啊！！</span><span id="d7Choice2" class="choice2">别叫了啊啊啊啊啊啊！吵死了！！再叫抽你！</span></li>
+				<li id="d7Result12" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">第二天清晨</span></li>
+				<li class="clearfix"><span class="dialog-cat">傻瓜！你怎么能趁本大人睡觉把我就搬到宠物医院来呢！赏你一爪子！口亨</span></li>
+				<li class="clearfix"><span id="d7Choice3" class="choice1"> 我想着迅速来做绝育你就会好啊…没想到…</span><span id="d7Choice4" class="choice2">根本没人跟我讲过怎么处理嘛，这怎么能怪我呢？</span></li>
+				<li id="d7Result34" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">其实发情期是不能做任何手术的 医生说的你记住了么？本大人很担心自己的安危啊</span></li>
+				<li class="clearfix"><span id="d7Choice5" class="choice1"> 知道了知道了别唠叨</span><span id="d7Choice6" class="choice2">记好啦！放心！</span></li>
+				<li id="d7Result56" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">嘿嘿那这样的话，我们回家吧铲屎官～</span></li>
+				<li class="clearfix"><span id="d7Choice7" class="choice1"> 不行，我得准备点东西～正好在这里买好伊丽莎白圈，再顺道买些卫生用品回去把家里彻底消消毒</span><span id="d7Choice8" class="choice2">回家回家，发情期什么都做不了，绝育以后再说吧，其实我现在又觉得做不做都无所谓了，要不干脆算了吧</span></li>
+				<li id="d7Result78" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">还是再来给你强调一下好了，记好：理论上对于6个月左右的猫，进入了性成熟期就应该进行绝育。不过大家公认的操作是公猫8个月大、母猫7个月大做绝育。除了不能在发情期绝育外，你还知道什么绝育前在家自检的内容吗？</span></li>
+				<li class="clearfix"><span id="d7Choice9" class="choice1">抢答！我造哦！应该确认猫的身体健康活泼，否则术后痊愈会很慢</span><span id="d7Choice10" class="choice2">wow这么复杂啊，大不了之后再查嘛</span></li>
+				<li id="d7Result910" class="clearfix"><span class="dialog-cat"></span></li>
+				<li class="clearfix"><span class="dialog-cat">还有术后一定要给我带上伊丽莎白圈啊！</span></li>
+				<li class="clearfix"><span id="d7Choice11" class="choice1">伊丽莎白？圈？那是什么？？</span><span id="d7Choice12" class="choice2">嗯嗯一定的啦！别看你现在保证会带，到时候估计又得一场恶战才能给你套上去科科</span></li>
+				<li id="d7Result1112" class="clearfix"><span class="dialog-cat"></span></li>
+				<li id="d7next" class="clearfix"><span class="next">快速进入下一天</span></li>
+			</ul>
+			<ul id="d8Dialog" class="dialog clearfix">
+				<li class="clearfix"><span class="dialog-cat">ฅ( ̳• ◡ • ̳)ฅ</span></li>
+				<li class="clearfix"><span class="dialog-cat">Hello铲屎官</span></li>
+				<li class="clearfix"><span class="dialog-cat">新的一天开始啦</span></li>
+				<li class="clearfix"><span class="dialog-cat">当然我知道哦今天可是特别的一天哦～你的生日</span></li>
+				<li class="clearfix"><span class="dialog-cat">所以呢，我特别准备了这个：</span></li>
+				<li class="clearfix"><span class="dialog-cat">我珍藏多年的的小鱼干！</span></li>
+				<li class="clearfix"><span class="dialog-cat">宝宝我是不是特别甜？！不许反驳哦</span></li>
+				<li class="clearfix"><span class="dialog-cat">这段时间和你的相处真的是我生命中非常美好的一段回忆呢，暂时原谅你时常惹我心塞的小缺点好了</span></li>
+				<li class="clearfix"><span class="dialog-cat">感谢你的照料哦～</span></li>
+				<li class="clearfix"><span class="dialog-cat">一起幸福快乐的生活下去吧～</span></li>
+				<li class="clearfix"><span class="dialog-cat">我知道你会永远是我最孝顺的儿子、最忠实的铲屎官、最可靠的奴才～给你比小心心～(๑‾ ꇴ ‾๑)</span></li>
+			</ul>
+		</div>
+		<div id="mask"></div>
+	</div>
+	<div id="layer" class="layer">
+		<ul>
+			<li class="layer-img"><img src="img/heart.png"><span class="layer-img-text">+1</span><span id="layerClose" class="layer-close"></span></li>
+			<li id="layerText1" class="layer-text1"></li>
+			<li id="layerText2" class="layer-text2"></li>
+			<li id="layerBottom" class="layer-bottom"></li>
+		</ul>
+	</div>
+	<div id="gameover" class="layer">
+		<span id="gameoverClose" class="gameover-close"></span>
+		<ul>
+			
+			<li id="gameoverBottom" class="layer-bottom">好的我会继续努力的！</li>
+		</ul>
+	</div>
+	<div  id="finish" class="layer">
+		<span id="finishClose" class="finish-close"></span>
+		<ul>
+			
+			<li id="finishBottom" class="layer-bottom">再重来一次吧</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript" src="scripts/index.js"></script>
+	<script type="text/javascript" src="scripts/slider.js"></script>
+</body>
+</html>
