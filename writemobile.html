@@ -35,7 +35,7 @@ h1 {
 function Handwriting(id) {  
     this.canvas = document.getElementById(id);  
     this.ctx = this.canvas.getContext("2d");  
-    this.ctx.fillStyle = "rgba(0,0,0,0.25)";  
+    this.ctx.fillStyle = "rgba(0,0,0,0.75)";  
     this.canvas.addEventListener("touchstart", this.downEvent.bind(this), false);  
     this.canvas.addEventListener("touchmove", this.moveEvent.bind(this), false);  
     this.canvas.addEventListener("touchend", this.upEvent.bind(this), false);  
