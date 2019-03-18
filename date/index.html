@@ -1,0 +1,25 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>date</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="date"></h1>
+    <script>
+      const h1 = document.getElementById('date')
+      let date = new Date('2018-1-31')
+      let days = Math.round((new Date() - date) / 86400000)
+      h1.innerHTML = days
+    </script>
+  </body>
+</html>
